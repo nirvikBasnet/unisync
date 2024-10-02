@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1092649235217",
+    "project_id": "unisync-def89",
+    "storage_bucket": "unisync-def89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092649235217:android:7276b8310c33135abcd2b0",
+        "android_client_info": {
+          "package_name": "technology.yeti.unisync"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092649235217-b26sbgip6v8gfm5alv69tvpml6s2tbrq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "technology.yeti.unisync",
+            "certificate_hash": "f5209192242450a8fe695dfd6d9081c6d48d1315"
+          }
+        },
+        {
+          "client_id": "1092649235217-5boj96q6s72t8btqle199j47s3f7vj9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMKyu4D9Y7LfArVQ2I-od3l01nNUzBZW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092649235217-5boj96q6s72t8btqle199j47s3f7vj9i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1092649235217-ottop35q3pkc05rcjp65ofp5kqhillr7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "technology.yeti.unisync"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
