@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Text, View, StyleSheet, KeyboardAvoidingView, TextInput, Button } from "react-native";
 import auth from '@react-native-firebase/auth';
 import StyledButton from "@/components/StyledButton";
+import { isValidEmail } from "./utils/utils";
 
 
 export default function Index() {
@@ -14,10 +15,10 @@ export default function Index() {
     setLoading(true);
     try {
       await auth().createUserWithEmailAndPassword(email, password);
-      alert("Check your emails:");
+      alert("Account created! Please login to continue.");
     } catch (e: any) {
 
-      alert('Registration failed: ' + e.message)
+      alert('Registration failed! Please try again.' + e.message)
     } finally {
       setLoading(false)
     }
@@ -34,10 +35,6 @@ export default function Index() {
     }
   }
 
-  const isValidEmail = (email: string) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email)
-  }
 
   const isButtonEnabled = isValidEmail(email) && password.length > 0;
 
